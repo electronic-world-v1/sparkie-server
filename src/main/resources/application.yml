@@ -1,0 +1,21 @@
+server:
+    port: 9090
+
+spring:
+    application:
+        name: sparkie-server
+    cloud:
+        config:
+            server:
+                git:
+                    default-label: main
+                    uri: https://github.com/calisua1/spring-cloud-config-repository
+
+eureka:
+    client:
+        serverUrl:
+            defaultZone: http://localhost:9090/eureka
+        registerWithEureka: false
+        fetchRegistry: false
+        # Self-Preservation 모드를 켜고 끌 수 있는 설정이다. 가급적이면 운영 상황에서는 끄지 않는 것을 권장한다.
+        # enable-self-preservation: true
