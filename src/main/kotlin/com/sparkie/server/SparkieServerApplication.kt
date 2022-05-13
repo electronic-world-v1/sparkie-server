@@ -4,7 +4,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.cloud.config.server.EnableConfigServer
 import org.springframework.boot.runApplication
 
-
 @EnableConfigServer
 @SpringBootApplication
 class SparkieServerApplication
